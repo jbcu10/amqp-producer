@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: pusher
+    password: pusher
+  cloud:
+    stream:
+      bindings:
+       output:
+        binder: rabbit
+        content-type: application/json
